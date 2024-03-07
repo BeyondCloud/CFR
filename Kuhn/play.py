@@ -3,6 +3,7 @@ import itertools
 from termcolor import colored
 from itertools import cycle
 from dataclasses import dataclass
+import numpy as np
 
 VERBOSE = True
 card_strength = {"J":0, "Q":1, "K":2}
@@ -140,7 +141,7 @@ class Human(Player):
 
 class GTOPlayer(Player):
     # [check/call, bet, fold]
-    alpha = 0
+    alpha = np.clip(0, a_min=0, a_max=1/3)
     tree = {
         "o": {
             "J":[1-alpha, alpha, 0],
