@@ -1,0 +1,11 @@
+{
+    "open_raise": "100:AA-66, AKo-ATo, KQo-KJo, AKs-A2s, KQs-K7s, QJs-Q9s, JTs-J9s, T9s, 98s, 87s",
+    "oop_3b": {
+        "4b": "AQo:0.49,KTs:0.49,A5s:0.49,ATs:0.49,QQ:0.5,AKo:0.5,AJs:0.5, KJs,KQs,KK,AKs,AA",
+        "call": "65s:0.3,76s:0.3,87s:0.3,QQ:0.5,AKo:0.5,AJs:0.5, 77,88,99,TT,JTs,JJ,QJs,AQs"
+    },
+    "ip_3b": {
+        "4b": "KJs:0.5,AKo:0.5,A5s:0.5,ATs:0.5,AJs:0.5,KK,AKs,AA",
+        "call": "KJs:0.5,AKo:0.5,ATs:0.5,AJs:0.5,88,99,TT,JJ,QJs,QQ,KQs,AQs"
+    }
+}

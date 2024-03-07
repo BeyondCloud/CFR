@@ -1,0 +1,18 @@
+{
+    "open_raise": "55,65s,66,76s,77,87s,88,98s,99,T9s,TT,QTo,KTo,ATo,J9s,JTs,JJ,QJo,KJo,AJo,Q9s,QTs,QJs,QQ,KQo,AQo,K8s,K9s,KTs,KJs,KQs,KK,AKo,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,AA",
+    "oop_3b": {
+        "4b": "JJ:0.5,KTs:0.5,KQs:0.5,A5s:0.5,ATs:0.5,AJs:0.5,QQ,AQo,KJs,KK,AKo,AKs,AA",
+        "call": "65s:0.2,76s:0.2,77:0.2,87s:0.2,JTs:0.5,JJ:0.5,QJs:0.5,KTs:0.5,KQs:0.5,A5s:0.5,ATs:0.5,AJs:0.5, 88,99,TT,AQs"
+    },
+    "ip_3b": {
+        "4b": "AQo:0.49,KTs:0.49,KJs:0.49,AKo:0.49,A5s:0.49,ATs:0.49,KK,AKs,AA",
+        "call": "77:0.5,QTs:0.5,QJs:0.5,KTs:0.51,KJs:0.51,AKo:0.51,A5s:0.51,ATs:0.51, 88,99,TT,JJ,QQ,KQs,AJs,AQs"
+    },
+    "utg_2b": {
+        "3b": "A4s:0.5,A5s:0.75, 88,99,TT,JJ,QJs,QQ,AQo,KTs,KJs,KQs,KK,AKo,ATs,AJs,AQs,AKs,AA"
+    },
+    "utg_4b": {
+        "5b": "AKs:0.5,AA:0.5,KK",
+        "call": "99:0.5,AKs:0.5,AA:0.5,TT,JJ,QQ,AKo,AQs"
+    }
+}

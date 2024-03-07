@@ -1,0 +1,61 @@
+{
+    "squeeze": {
+        "utg-mp": {
+            "standard": "76s:0.5,87s:0.5,TT:0.5,A4s:0.5,A5s:0.5,JJ,QQ,KJs,KQs,KK,AKo,AJs,AQs,AKs,AA",
+            "call": "76s:0.5,87s:0.5,TT:0.5,A4s:0.5,A5s:0.5,22,33,44,54s,55,65s,66,75s,77,86s,88,97s,98s,99,T8s,T9s,ATo,J9s,JTs,KJo,AJo,QTs,QJs,KQo,AQo,K9s,KTs,A2s,A3s,A6s,A7s,A8s,A9s,ATs"
+        },
+        "co-btn": {
+            "standard": "65s:0.5,76s:0.5,87s:0.5,99:0.5,T8s:0.5,T9s:0.5,ATo:0.5,KJo:0.5,A4s:0.5,TT,JTs,JJ,QTs,QJs,QQ,AQo,KTs,KJs,KQs,KK,AKo,A5s,ATs,AJs,AQs,AKs,AA",
+            "call": "65s:0.5,76s:0.5,87s:0.5,99:0.5,T8s:0.5,T9s:0.5,ATo:0.5,KJo:0.5,A4s:0.5,22,33,44,53s,54s,55,64s,66,75s,77,86s,88,97s,98s,QTo,KTo,J8s,J9s,QJo,AJo,Q9s,KQo,K2s,K3s,K4s,K5s,K6s,K7s,K8s,K9s,A2s,A3s,A6s,A7s,A8s,A9s"
+        },
+        "btn-sb": {
+            "standard": "65s:0.5,76s:0.5,87s:0.5,88:0.5,A9o:0.5,J7s:0.5,AJo:0.5,Q5s:0.5,Q6s:0.5,KQo:0.5,K9s:0.5,KJs:0.5,A4s:0.5,99,T9s,TT,J9s,JTs,JJ,Q9s,QTs,QJs,QQ,AQo,KTs,KQs,KK,AKo,A5s,ATs,AJs,AQs,AKs,AA",
+            "call": "65s:0.5,76s:0.5,87s:0.5,88:0.5,A9o:0.5,J7s:0.5,AJo:0.5,Q5s:0.5,Q6s:0.5,KQo:0.5,K9s:0.5,KJs:0.5,A4s:0.5,22,33,43s,44,53s,54s,55,64s,66,75s,77,86s,96s,97s,98s,T7s,T8s,JTo,QTo,KTo,ATo,J8s,QJo,KJo,Q3s,Q4s,Q7s,Q8s,K2s,K3s,K4s,K5s,K6s,K7s,K8s,A2s,A3s,A6s,A7s,A8s,A9s"
+        }
+    },
+    "cold_4b": {
+        "ep": "JJ:0.5,AQs:0.5,QQ,KK,AKo,AKs,AA",
+        "co-btn": "AQo:0.5,KJs:0.5,JJ,QQ,KQs,KK,AKo,AJs,AQs,AKs,AA",
+        "btn-sb": "KTs:0.5,KQs:0.5,A4s:0.5,A5s:0.5,ATs:0.5,AJs:0.5,JJ,QQ,KK,AKo,AQs,AKs,AA"
+    },
+    "utg_2b": {
+        "3b": "JTs:0.34,KTs:0.34,A4s:0.34,ATs:0.34,JJ:0.5,QJs:0.5,KJs:0.5,A5s:0.5, QQ,KQs,KK,AKo,AJs,AQs,AKs,AA",
+        "call": "JJ:0.5,QJs:0.5,KJs:0.5,A5s:0.5,JTs:0.66,KTs:0.66,A4s:0.66,ATs:0.66, 22,33,44,54s,55,65s,66,76s,77,87s,88,98s,99,T9s,TT,ATo,J9s,QJo,KJo,AJo,Q9s,QTs,KQo,AQo,K9s,A2s,A3s,A6s,A7s,A8s,A9s"
+    },
+    "mp_2b": {
+        "3b": "65s:0.3,76s:0.3,87s:0.3,TT:0.3,ATs:0.3,JTs:0.5,KTs:0.5,A3s:0.5,A4s:0.5,A5s:0.5, JJ,QJs,QQ,KJs,KQs,KK,AKo,AJs,AQs,AKs,AA",
+        "call": "JTs:0.5,KTs:0.5,A3s:0.5,A4s:0.5,A5s:0.5,65s:0.7,76s:0.7,87s:0.7,TT:0.7,ATs:0.7, 22,33,44,54s,55,66,77,88,98s,99,T8s,T9s,ATo,J9s,QJo,KJo,AJo,Q9s,QTs,KQo,AQo,K6s,K7s,K8s,K9s,A2s,A6s,A7s,A8s,A9s"
+    },
+    "co_2b": {
+        "3b": "T9s:0.25,ATo:0.25,Q5s:0.25,Q6s:0.25,K6s:0.25,A2s:0.25,A9s:0.25,ATs:0.25,65s:0.5,76s:0.5,87s:0.5,98s:0.5,J9s:0.5,KJo:0.5,QTs:0.5,KTs:0.5,A3s:0.5, 99,TT,JTs,JJ,QJs,QQ,KJs,KQs,KK,AKo,A4s,A5s,AJs,AQs,AKs,AA",
+        "call": "65s:0.5,76s:0.5,87s:0.5,98s:0.5,J9s:0.5,KJo:0.5,QTs:0.5,KTs:0.5,A3s:0.5,T9s:0.75,ATo:0.75,Q5s:0.75,Q6s:0.75,K6s:0.75,A2s:0.75,A9s:0.75,ATs:0.75, 22,33,44,54s,55,64s,66,75s,77,86s,88,97s,T7s,T8s,JTo,KTo,J8s,QJo,AJo,Q8s,Q9s,KQo,AQo,K4s,K5s,K7s,K8s,K9s,A6s,A7s,A8s"
+    },
+    "btn_2b": {
+        "3b": "A7o:0.25,A8o:0.25,K6s:0.25,K7s:0.25,54s:0.5,65s:0.5,76s:0.5,T8s:0.5,KTo:0.5,J8s:0.5,KJo:0.5,AJo:0.5,QJs:0.5,KQo:0.5,KTs:0.5,KJs:0.5,A3s:0.5, 87s,88,98s,99,T9s,TT,J9s,JTs,JJ,QQ,AQo,KQs,KK,AKo,A4s,A5s,A9s,ATs,AJs,AQs,AKs,AA",
+        "call": "54s:0.5,65s:0.5,76s:0.5,T8s:0.5,KTo:0.5,J8s:0.5,KJo:0.5,AJo:0.5,QJs:0.5,KQo:0.5,KTs:0.5,KJs:0.5,A3s:0.5,A7o:0.75,A8o:0.75,K6s:0.75,K7s:0.75, 22,33,44,53s,55,A5o,64s,66,A6o,75s,77,86s,96s,97s,T9o,A9o,T7s,JTo,QTo,ATo,J7s,QJo,Q6s,Q7s,Q8s,Q9s,QTs,K2s,K3s,K4s,K5s,K8s,K9s,A2s,A6s,A7s,A8s"
+    },
+    "sb_2b": {
+        "3b": "A3o:0.5,A4o:0.5,54s:0.5,K5o:0.5,65s:0.5,66:0.5,K6o:0.5,A6o:0.5,76s:0.5,J8o:0.5,Q8o:0.5,97s:0.5,Q9o:0.5,T3s:0.5,T4s:0.5,T5s:0.5,T8s:0.5,J2s:0.5,J3s:0.5,J9s:0.5,AJo:0.5,QTs:0.5,K6s:0.5,K9s:0.5,KTs:0.5,A3s:0.5,A2o,77,K7o,87s,88,98s,99,T9s,TT,JTs,JJ,QJs,QQ,AQo,KJs,KQs,KK,AKo,A4s,A5s,ATs,AJs,AQs,AKs,AA",
+        "call": "A3o:0.5,A4o:0.5,54s:0.5,65s:0.5,66:0.5,A6o:0.5,76s:0.5,97s:0.5,Q9o:0.5,T3s:0.5,T4s:0.5,T5s:0.5,T8s:0.5,J2s:0.5,J3s:0.5,J9s:0.5,AJo:0.5,QTs:0.5,K6s:0.5,K9s:0.5,KTs:0.5,A3s:0.5,22,32s,33,42s,43s,44,52s,53s,55,65o,A5o,63s,64s,76o,73s,74s,75s,87o,A7o,83s,84s,85s,86s,98o,T8o,K8o,A8o,93s,94s,95s,96s,T9o,J9o,K9o,A9o,T6s,T7s,JTo,QTo,KTo,ATo,J4s,J5s,J6s,J7s,J8s,QJo,KJo,Q2s,Q3s,Q4s,Q5s,Q6s,Q7s,Q8s,Q9s,KQo,K2s,K3s,K4s,K5s,K7s,K8s,A2s,A6s,A7s,A8s,A9s"
+    },
+    "utg_4b": {
+        "5b": "AKo:0.5,KK,AKs,AA",
+        "call": "TT:0.25,AKo:0.5, JJ,QQ,AQs"
+    },
+    "mp_4b": {
+        "5b": "AKo:0.5,KK,AKs,AA",
+        "call": "TT:0.25,AKo:0.5, JJ,QQ,AQs"
+    },
+    "co_4b": {
+        "5b": "QQ,KK,AKo,AKs,AA",
+        "call": "JTs:0.5,QJs:0.5,KJs:0.5,99,TT,JJ,KQs,AJs,AQs"
+    },
+    "btn_4b": {
+        "5b": "JJ:0.5,AA:0.5,QQ,KK,AKo,AKs",
+        "call": "77:0.5,87s:0.5,98s:0.5,T9s:0.5,JJ:0.5,KTs:0.5,AA:0.5,88,99,TT,JTs,QJs,AQo,KJs,KQs,ATs,AJs,AQs"
+    },
+    "sb_4b": {
+        "5b": "JJ:0.5,A4s:0.5,A5s:0.5,AA:0.5,QQ,KK,AKo,AKs",
+        "call": "JJ:0.5,A4s:0.5,A5s:0.5,AA:0.5,65s,66,76s,77,87s,88,98s,99,T9s,TT,JTs,QTs,QJs,AQo,KTs,KJs,KQs,ATs,AJs,AQs"
+    }
+}
