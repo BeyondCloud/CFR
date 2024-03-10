@@ -1,6 +1,10 @@
+"""
+utils should not depend on any other module
+"""
 import random
 from termcolor import colored
 from config import VERBOSE
+
 def game_print(text, color="white", verbose=VERBOSE):
     if verbose:
         print(colored(text, color))

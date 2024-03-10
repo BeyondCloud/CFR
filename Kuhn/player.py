@@ -4,35 +4,47 @@ from utils import game_print, sample
 
 # Play a round of Kuhn Poker
 class Player:
-    def __init__(self, chip):
-        self.name = self.__class__.__name__
+    def __init__(self, chip, name=None):
+        self.name = name
+        if not name:
+            self.name = self.__class__.__name__
         self.chip = chip
         self.card = None
+        # self.chip_in_pot = 0  # don't need this, you can calculate it from pot - initial chip
+        self.init_chip_size = self.chip
+    def start_game(self, card, pot:Pot, blind=1, log=False):
+        self.init_chip_size = self.chip
+        self.card = card
+        self.bet(blind,pot,log=log)
 
-    def handle_act(self, idx, history:History) -> str:
-        """
-        id2act = ["c", "b", "f"]
-        """
-        pass
+    def end_game(self):
+        self.card = None
+
+    def chip_in_pot(self):
+        return self.init_chip_size - self.chip
 
     def grab_chip_from(self, pot:Pot):
         game_print(f"{self.name} wins pot {pot.chip}","yellow")
         self.chip += pot.chip
         pot.chip = 0
 
-    def check_call(self, size, pot:Pot, history:History):
+    def check_call(self, size, pot:Pot, history:History) -> int:
+        """
+        return call size, if check return 0
+        """
         if history.get_prev_act() != "b":
             game_print(f"{self.card} check",'blue')
-            return
+            return 0
+        self.bet(size, pot, log=True, type="call")
         game_print(f"{self.card} calls {size}")
+        return size
+
+    def bet(self, size, pot:Pot, log=True, type="bet"):
+        if log:
+            game_print(f"{self.card} {type}s {size} chips", 'red')
         pot.chip += size
         self.chip -= size
 
-    def bet(self, size, pot:Pot, log=True):
-        if log:
-            game_print(f"{self.card} bets {size} chips", 'red')
-        pot.chip += size
-        self.chip -= size
     def fold(self):
         game_print(f"{self.card} folds")
         return
@@ -59,8 +71,10 @@ class Player:
             act = "f"
         history.append(act)
         return True
+    def get_hand_rank(self):
+        return {"J":0, "Q":1, "K":2}[self.card]
 
-class Human(Player):
+class HumanPlayer(Player):
     # [check/call, bet, fold]
     alpha = 0
     tree = {
@@ -85,14 +99,14 @@ class Human(Player):
             "K":[1, 0, 0],
         },
     }
-    def __init__(self, chip):
-        super().__init__(chip)
+    def __init__(self, chip, name=None):
+        super().__init__(chip, name=name)
 
 
 class WeakGTOPlayer(Player):
-    def __init__(self, chip, alpha=0):
+    def __init__(self, chip, alpha=0,name=None):
         assert 0 <= alpha <= 1/3
-        super().__init__(chip)
+        super().__init__(chip, name)
         # [check/call, bet, fold]
         self.tree = {
             "o": {
@@ -117,9 +131,9 @@ class WeakGTOPlayer(Player):
             },
         }
 class GTOPlayer(Player):
-    def __init__(self, chip, alpha=0):
+    def __init__(self, chip, alpha=0,name=None):
         assert 0 <= alpha <= 1/3
-        super().__init__(chip)
+        super().__init__(chip,name)
 
         # [check/call, bet, fold]
         self.tree = {
