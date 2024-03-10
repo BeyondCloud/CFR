@@ -76,7 +76,6 @@ class Player:
 
 class HumanPlayer(Player):
     # [check/call, bet, fold]
-    alpha = 0
     tree = {
         "o": {
             "J":[1, 0, 0],

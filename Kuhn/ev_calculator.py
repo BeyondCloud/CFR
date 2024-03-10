@@ -31,7 +31,6 @@ def _calc_ev_card(hero:Player, villian:Player, hero_bet = 0 , villian_bet = 0, h
                                             hist=hist + "b")
         elif act == 2:
             val -= prob * hero_bet
-
     # print(val, hist)
     return val
 
@@ -46,24 +45,29 @@ def calc_ev_card(p1:Player, p2:Player, p1_card, p2_card):
     return  res
 
 
-def calc_ev(hero:Player, villian:Player):
+def calc_ev(p1:Player, p2:Player):
     res = 0
     for p1_card, p2_card in ALL_CARD_PERMS:
         ev = calc_ev_card(p1, p2, p1_card, p2_card)
         res  += ev
-        print(p1_card,p2_card, ev)
+        # print(p1_card,p2_card, ev)
     return  res / len(ALL_CARD_PERMS)
 
 if __name__ == "__main__":
     alpha = 0
     p1 = HumanPlayer(chip=0, name="p1")
     # p1 = GTOPlayer(chip=0,alpha=alpha, name="p1")
-
     p2 = GTOPlayer(chip=0,alpha=alpha, name="p2")
-    ev = calc_ev(p1, p2)
-    ev2 = calc_ev(p2, p1)
+
+    print(f"EV {p2.name} IP:")
+    ev = - calc_ev(p1, p2)
     print(ev)
+
+    print(f"EV {p2.name} OOP:")
+    ev2 = calc_ev(p2, p1)
     print(ev2)
+    # print(calc_ev_card(p2, p1, "K", "Q"))
+
     # assert ev == -0.055555555555555615
 
     # alpha = 1
